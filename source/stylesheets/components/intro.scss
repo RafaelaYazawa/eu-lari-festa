@@ -1,0 +1,27 @@
+.intro {
+  width: 100%;
+  padding: 0px 10px;
+  h1 {
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: end;
+    padding-right: 170px;
+    margin-top: 0px;
+  }
+}
+
+.intro-text {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 30px;
+  position: relative;
+  img {
+    width: 600px;
+    opacity: 0.9;
+  }
+}

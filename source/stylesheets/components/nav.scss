@@ -1,0 +1,32 @@
+nav {
+  padding: 0px 130px;
+  font-size: 15px;
+  background: linear-gradient(to right, #ff7f00, #c75000);
+  border-bottom: 2px solid #a3471d;
+}
+
+nav img {
+  width: 100%;
+  clip-path: circle(33%);
+  overflow: hidden;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h3 {
+    margin-right: 30px;
+  }
+  ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    list-style-type: none;
+  }
+  a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
