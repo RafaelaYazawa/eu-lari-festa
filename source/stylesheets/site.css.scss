@@ -10,7 +10,6 @@ body {
 		url("../images/bandeiras.png");
 	background-size: contain;
 	background-repeat: repeat-x;
-	background-position: 50%;
 	position: relative;
 	z-index: 10;
 	color: #333;
@@ -18,7 +17,7 @@ body {
 		"Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
 		"Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
 		"Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-	margin: 0px;
+	margin: 0px 0px 100px 0px;
 }
 
 a {
