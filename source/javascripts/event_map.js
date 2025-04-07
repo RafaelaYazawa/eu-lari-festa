@@ -1,6 +1,5 @@
 export function initializeMap() {
-	mapboxgl.accessToken =
-		"pk.eyJ1IjoicmFmYXlhemF3YSIsImEiOiJjbTk2eG1tMmgwMWxoMm1xMnYwcmtzajE0In0.LRxPS3t9_3_4R9aQPGqkEg";
+	mapboxgl.accessToken = mapboxAccessToken;
 
 	const map = new mapboxgl.Map({
 		container: "map",

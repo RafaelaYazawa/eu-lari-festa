@@ -17,6 +17,9 @@
     <div class="container">
       <%= yield %>
     </div>
+    <script>
+      const mapboxAccessToken = "<%= ENV['MAPBOX_ACCESS_TOKEN'] %>";
+    </script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   </body>
 </html>
