@@ -1,29 +1,63 @@
 .intro {
-	width: 100%;
-	padding: 0px 10px;
-	margin-bottom: 30px;
-	h1 {
-		font-size: 75px;
-		letter-spacing: 2px;
-		margin-bottom: 0px;
-		margin-top: 130px;
-	}
-	h3 {
-		font-size: 24px;
-		text-align: end;
-		padding-right: 170px;
-		margin-top: 0px;
-	}
+  width: 100%;
+  padding: 0px 10px;
+  margin-bottom: 30px;
+  h1 {
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 130px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: end;
+    padding-right: 170px;
+    margin-top: 0px;
+  }
 }
 
 .intro-text {
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	gap: 30px;
-	position: relative;
-	img {
-		width: 600px;
-		opacity: 0.9;
-	}
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 30px;
+  position: relative;
+  img {
+    width: 600px;
+    opacity: 0.9;
+  }
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1297px) {
+  .intro h1 {
+    font-size: 66px;
+  }
+}
+
+@media screen and (min-width: 1005px) and (max-width: 1179px) {
+  .intro h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .intro h1 {
+    font-size: 45px;
+    margin-top: 100px;
+  }
+
+  .intro h3 {
+    font-size: 20px;
+    text-align: start;
+    margin-top: 0px;
+  }
+
+  .intro-text p {
+    font-size: 17px;
+  }
+
+  .intro-text img {
+    width: 330px;
+    opacity: 0.9;
+  }
 }
