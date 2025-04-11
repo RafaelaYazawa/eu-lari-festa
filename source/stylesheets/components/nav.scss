@@ -1,79 +1,89 @@
 .nav-orange {
-  padding: 0px 130px;
-  font-size: 15px;
-  background: linear-gradient(to right, #ff7f00, #c75000);
-  border-bottom: 2px solid #a3471d;
+  padding: 0.7rem 5rem;
+  background-color: orange;
+  margin: 0px auto;
+  h3 {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    margin-left: auto;
+  }
+}
+.link-list {
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.25rem;
+  display: flex;
+  padding: 0px;
+  font-size: large;
+  margin: 1.125rem 0 0 0;
+  padding-bottom: 8px;
+}
+.link {
+  text-decoration: none;
 }
 
-.menu-icon {
+.hamburguer-icon {
   display: none;
 }
 
-.wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  h3 {
-    margin-right: 30px;
-  }
-}
-
-.nav-links {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  a {
-    font-weight: 500;
-    text-decoration: none;
-  }
-  ul {
-    display: flex;
-    gap: 10px;
-    list-style-type: none;
-  }
-}
-
-@media screen and (max-width: 978px) {
-  .nav-orange {
-    padding: 0px 70px;
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 850px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .nav-orange {
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 3;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    h3 {
+      font-size: 14px;
+      max-width: 90%;
+      padding-right: 0.5rem;
+    }
   }
-  .menu-icon {
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .hamburguer-icon {
     display: block;
-    border: 1px solid rgb(67, 67, 67);
-    padding: 7px;
-    border-radius: 8px;
+    align-items: flex-end;
+    font-size: 14px;
   }
 
   .nav-links {
     display: none;
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    background: #d35400;
-    flex-direction: column;
-    gap: 1rem;
-    border-radius: 0px 0px 3px 3px;
   }
 
   .nav-links.show {
-    display: flex;
-    width: 20%;
-    text-align: center;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    background: orange;
   }
 
   .link-list {
-    padding: 0px;
     flex-direction: column;
-    width: 100%;
+    margin: 5px 0px;
+  }
+
+  .link {
+    font-size: 15px;
   }
 }

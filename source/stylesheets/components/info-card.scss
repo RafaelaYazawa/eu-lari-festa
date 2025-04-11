@@ -85,18 +85,56 @@
   }
 
   .post-it {
-    width: 180px;
+    width: 160px;
     padding: 0.6rem;
   }
 
   .post-it .pin {
-    font-size: 13px;
+    font-size: 12px;
   }
 
-  .post-it h3 {
+  .info-title {
+    font-size: 14px;
+  }
+  .info-body {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quadro-avisos {
+    width: 96%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .quadro-avisos {
+    max-width: 92.5%;
+    border: none;
+  }
+
+  .board {
+    background: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .post-it-wrapper {
+    gap: 1rem;
+  }
+
+  .post-it {
+    width: 200px;
+    max-width: 205px;
+    padding: 0.9em;
+  }
+
+  .info-title {
     font-size: 15px;
   }
-  .post-it p {
+
+  .info-body {
     font-size: 13px;
   }
 }

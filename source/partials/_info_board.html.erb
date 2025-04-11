@@ -4,8 +4,8 @@
          <% data.infos.each do |info| %>
             <div class="post-it">
                <i class="fa-solid fa-circle pin" style="color: #ab0d0d;"></i>
-               <h3><%= info.name %></h3>
-               <p><%= info.description %></p>
+               <h3><%= info.name class: "info-title" %></h3>
+               <p><%= info.description class: 'info-body' %></p>
             </div>
          <% end %>
       </div>
