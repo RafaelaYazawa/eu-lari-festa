@@ -9,10 +9,11 @@
     margin-top: 130px;
   }
   h3 {
-    font-size: 24px;
+    max-width: 100%;
+    font-size: 1.25rem;
     text-align: end;
-    padding-right: 170px;
-    margin-top: 0px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -42,7 +43,7 @@
 
 @media screen and (max-width: 978px) {
   .intro h1 {
-    font-size: 45px;
+    font-size: 43px;
     margin-top: 100px;
   }
 
@@ -53,11 +54,59 @@
   }
 
   .intro-text p {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .intro-text img {
-    width: 330px;
+    width: 315px;
     opacity: 0.9;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro h1 {
+    margin-top: 85px;
+    font-size: 35px;
+  }
+
+  .intro h3 {
+    padding: 0px;
+    font-size: 0.95rem;
+    text-align: end;
+  }
+
+  .intro-text p {
+    font-size: 13px;
+  }
+
+  .intro-text img {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro h1 {
+    margin-top: 55px;
+    font-size: 30px;
+  }
+
+  .intro h3 {
+    font-size: 13px;
+    text-align: end;
+  }
+
+  .intro-text p {
+    font-size: 13px;
+  }
+  .intro-text img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .intro-text p {
+    font-size: 16px;
+    line-height: 1.65rem;
+    font-weight: 400;
   }
 }

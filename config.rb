@@ -1,3 +1,6 @@
+set :bind_address, '0.0.0.0'
+
+
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
