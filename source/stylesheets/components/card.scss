@@ -1,9 +1,21 @@
-.card-container {
+.grid-wrapper {
+  display: flex;
+}
+
+.round-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
-  gap: 10px;
+  grid-template-rows: 1fr;
+}
+
+// .card-container {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+// }
+
+.prize-game {
+  width: 20px;
+  height: 50px;
 }
 
 .card {
@@ -12,7 +24,7 @@
 
 .prize-img {
   box-shadow: 2px 2px 3px rgb(105, 105, 105);
-  width: 280px;
+  width: fit-content;
   height: 200px;
   border-radius: 8px;
 }
