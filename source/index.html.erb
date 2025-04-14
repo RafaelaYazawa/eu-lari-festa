@@ -36,3 +36,7 @@
   </div>
 </div>
 
+
+<div class="qr-container">
+  <%= RQRCode::QRCode.new("http://comunidade-br-catolica-toyota.com").as_svg(module_size: 4, color: '000', shape_rendering: 'crispEdges', standalone: true).html_safe %>
+</div>

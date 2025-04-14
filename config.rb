@@ -49,3 +49,6 @@ page '/*.txt', layout: false
 # end
 
 require 'dotenv/load'
+require 'rqrcode'
+
+
