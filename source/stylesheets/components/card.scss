@@ -1,0 +1,22 @@
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid black;
+}
+
+.prize-img {
+  box-shadow: 2px 2px 3px rgb(105, 105, 105);
+  width: 280px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.prize-text {
+  text-align: center;
+}
