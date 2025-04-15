@@ -1,22 +1,46 @@
-.card-container {
+.grid-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.round-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  align-items: center;
-  gap: 10px;
+  grid-template-rows: 1fr;
+}
+
+.prize-game {
+  width: 100%;
+  height: fit-content;
+  margin-top: 0px;
 }
 
 .card {
-  border: 1px solid black;
+  // border: 1px solid black;
+  padding: 1rem;
+  border-radius: 16px;
+  width: 300px;
+}
+
+.prize-header {
+  margin-bottom: 13px;
+  margin-top: 0px;
 }
 
 .prize-img {
   box-shadow: 2px 2px 3px rgb(105, 105, 105);
-  width: 280px;
+  width: 275px;
   height: 200px;
   border-radius: 8px;
 }
 
 .prize-text {
   text-align: center;
+  margin: 10px;
+  font-size: 19px;
+}
+
+.prize-img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
 }
