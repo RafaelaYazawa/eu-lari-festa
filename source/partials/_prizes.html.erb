@@ -1,0 +1,19 @@
+<div class="grid-wrapper">
+   <div class="round-grid">
+   <% data.prizes.each do |game| %>
+   </div>
+
+   <div class="card-container">
+   <h2 class="prize-game"><%= game.rodada %></h2>
+   <% game.prizes.each do |prize| %>
+         <div class="card">
+            <div>
+               <h4 class="prize-header"><%= prize.quina %></h4>
+            </div>
+            <%= image_tag prize.image, class: 'prize-img' %>         
+            <p class="prize-text"><%= prize.name %></p>
+         </div>
+      <% end %>
+   <% end %>
+   </div>
+</div>

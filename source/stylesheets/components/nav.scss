@@ -1,4 +1,7 @@
 .nav-orange {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
   padding: 0.7rem 5rem;
   background-color: orange;
   margin: 0px auto;
@@ -17,26 +20,80 @@
     margin-left: auto;
   }
 }
+
 .link-list {
   list-style-type: none;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 1.25rem;
   display: flex;
   padding: 0px;
-  font-size: large;
   margin: 1.125rem 0 0 0;
   padding-bottom: 8px;
 }
 .link {
   text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s ease-in;
 }
 
 .hamburguer-icon {
   display: none;
 }
 
+.link-list li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #262626;
+  font-family: sans-serif;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.link-list li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.link-list li a::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: darkgreen;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.link-list li a:hover {
+  color: #fff;
+}
+
+.link-list li a:hover::before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.link-list li a:hover::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .nav-orange {
     position: sticky;

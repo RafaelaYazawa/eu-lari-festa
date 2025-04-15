@@ -2,6 +2,11 @@
   <%= partial "partials/hero_page" %>
 </div>
 
+<div id="prêmios">
+  <h3 class="sub-header">Prêmios</h3>
+  <%= partial "partials/prizes" %>
+</div>
+
 <div class="ponto-de-vendas-container" id="ponto-de-vendas">
   <h3 class="sub-header">Ponto de vendas</h3>
 </div>
@@ -20,23 +25,4 @@
 </div>
 
 
-<div>
-  <h3 class="sub-header">Prêmios</h3>
-  <div class="card-container">
-  <% data.prizes.each do |prize| %>
-    <div class="card">
-      <% if prize.image %>
-        <%= image_tag prize.image, class: 'prize-img' %>
-        <% else %>
-          <p>No image ...</p>
-        <% end %>
-      <h4 class="prize-text"><%= prize.name %></h4>
-    </div>
-  <% end %>
-  </div>
-</div>
 
-
-<div class="qr-container">
-  <%= RQRCode::QRCode.new("http://comunidade-br-catolica-toyota.com").as_svg(module_size: 4, color: '000', shape_rendering: 'crispEdges', standalone: true).html_safe %>
-</div>
