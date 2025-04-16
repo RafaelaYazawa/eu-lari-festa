@@ -1,19 +1,25 @@
-<div class="grid-wrapper">
-   <div class="round-grid">
-   <% data.prizes.each do |game| %>
-   </div>
+<div class="tabs">
+  <div class="tab-buttons">
+    <% data.prizes.each_with_index do |round, index| %>
+      <button class="tab-button <%= 'active' if index == 0 %>" data-tab="tab-<%= index %>">
+        <%= round.rodada %>
+      </button>
+    <% end %>   
+  </div>
 
-   <div class="card-container">
-   <h2 class="prize-game"><%= game.rodada %></h2>
-   <% game.prizes.each do |prize| %>
-         <div class="card">
-            <div>
-               <h4 class="prize-header"><%= prize.quina %></h4>
+  <div class="tab-contents">   
+    <% data.prizes.each_with_index do |round, index| %> 
+      <div class="tab-content <%= 'active' if index == 0 %>" id="tab-<%= index %>">
+        <div class="flex">
+          <% round.prizes.each do |prize| %>
+            <div class="card"> 
+              <h4 class="prize-header"><%= prize.quina %></h4> 
+            <%= image_tag prize.image, class: 'prize-img' %>  
+            <p class="prize-text"><%= prize.name %></p> 
             </div>
-            <%= image_tag prize.image, class: 'prize-img' %>         
-            <p class="prize-text"><%= prize.name %></p>
-         </div>
-      <% end %>
-   <% end %>
-   </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %> 
+  </div>
 </div>
