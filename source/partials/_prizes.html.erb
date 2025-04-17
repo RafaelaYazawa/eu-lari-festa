@@ -13,13 +13,12 @@
         <div class="flex">
           <% round.prizes.each do |prize| %>
             <div class="card"> 
-              <h4 class="prize-header"><%= prize.quina %></h4> 
-            <%= image_tag prize.image, class: 'prize-img' %>  
-            <p class="prize-text"><%= prize.name %></p> 
+              <%= image_tag prize.image, class: 'prize-img' %>  
+                <h4><%= prize.quina %></h4>               
+                <p class="prize-description"><%= prize.description %></p>
             </div>
           <% end %>
-        </div>
       </div>
     <% end %> 
-  </div>
+</div>
 </div>

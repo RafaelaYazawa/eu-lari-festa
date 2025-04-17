@@ -17,9 +17,10 @@
 
 .card {
   // border: 1px solid black;
-  padding: 1rem;
+  margin: 1rem;
   border-radius: 16px;
   width: 300px;
+  position: relative;
 }
 
 .prize-header {
@@ -28,15 +29,70 @@
   font-size: larger;
 }
 
-.prize-img {
-  box-shadow: 2px 2px 4px rgb(105, 105, 105);
-  width: 300px;
-  height: 200px;
-  border-radius: 8px;
+.prize-text {
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  color: rgb(0, 157, 8);
+  text-align: center;
+  padding: 10px;
+  font-size: 19px;
+  border-radius: 16px;
+  h4 {
+    background-color: aqua;
+    font-size: 16px;
+    margin: 10px;
+  }
 }
 
-.prize-text {
-  text-align: center;
-  margin: 10px;
-  font-size: 19px;
+.prize-img {
+  box-shadow: 2px 2px 4px rgb(105, 105, 105);
+  width: 95%;
+  height: 250px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.prize-text:hover {
+  color: white;
+  position: absolute;
+  top: 150px;
+  width: 95%;
+  left: 0px;
+  background-color: black;
+  .prize-description {
+    visibility: visible;
+  }
+}
+
+.prize-description {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .card {
+    // border: 1px solid black;
+    padding: 0.2rem;
+    border-radius: 16px;
+    width: 100%;
+  }
+
+  .prize-img {
+    width: 18rem;
+    margin-top: 20px;
+  }
+
+  .prize-text {
+    text-align: center;
+    margin: 7px 0px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .prize-img {
+    width: 15rem;
+    height: 10rem;
+    margin-top: 20px;
+  }
 }
