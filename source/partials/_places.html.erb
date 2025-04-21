@@ -1,0 +1,17 @@
+  <div class="cards">
+    <% data.places.each do |place| %>
+      <% link_to place.link, target: '_blank', class: 'place-link' do %>
+        <div class="card">
+          <%= image_tag place.location_img, class: 'card-img' %>
+          <div class="card-content">
+            <h3 class="card-title"><%= place.name %></h3>
+            <div class="card-p">
+              <p>
+              <%= place.location %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>

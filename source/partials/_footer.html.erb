@@ -1,5 +1,9 @@
-<%# <div class="footer" style="margin-bottom: 200px;">
-  <div class="qr-container">
-    <%= RQRCode::QRCode.new("http://comunidade-br-catolica-toyota.com").as_svg(module_size: 4, color: '000', shape_rendering: 'crispEdges', standalone: true).html_safe %>
-  <%# </div>
-</div>   %>
+<div class="footer">
+  <div class="brands">
+    <% data.brands.each_with_index do |brand, index| %>
+      <div class="partnership div<%= index+1 %>">
+        <%= image_tag brand.image, width: '200px', class: 'logos' %>
+      </div>
+    <% end %>
+  </div>
+</div>
