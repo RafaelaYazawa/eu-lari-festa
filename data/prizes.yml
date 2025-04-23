@@ -2,41 +2,41 @@
   prizes:
     - quina: "Quina 1"
       name: "Apple Watch Series 10"
-      description: "hello"
+
       image: "prizes/Apple-Watch-Global-Close-Your-Rings-Day-limited-edition-award.jpg"
     - quina: "Quina 2"
       name: "PS5"
-      description: "hello"
+
       image: "prizes/Hardware_PlayStation-5_Grey.png"
     - quina: "Cheia"
       name: 'TV 65" 4K'
-      description: "hello"
-      image: "https://www.lg.com/content/dam/channel/wcms/jp/oled-tv/2023/c3-pdp-update/gallery/65c3a/TV-OLED-65-C3-A-Gallery-01.jpg/_jcr_content/renditions/thum-1600x1062.jpeg"
+
+      image: "prizes/TV.jpg"
 - rodada: "2º Rodada"
   prizes:
     - quina: "Quina 1"
       name: "AirPods Pro "
-      description: "hello"
+
       image: "prizes/Apple-Audio-Lab-AirPods-Pro-2.jpg"
     - quina: "Quina 2"
       name: "Nintendo Switch"
-      description: "hello"
+
       image: "prizes/erik-mclean-EdUYo2Y435s-unsplash.jpg"
     - quina: "Cheia"
       name: 'TV 75" 4K'
-      description: "hello"
-      image: "https://i.zst.com.br/thumbs/12/3b/39/-905779308.jpg"
+
+      image: "prizes/LG-OLED.png"
 - rodada: "3º Rodada"
   prizes:
     - quina: "Quina 1"
       name: "Airfryer"
-      description: "hello"
-      image: "https://www.estadao.com.br/recomenda/wp-content/uploads/2023/11/painel-airfryer-electrolux-e1734446616975.webp"
+
+      image: "prizes/airfryer.jpg"
     - quina: "Quina 2"
       name: "Panela de arroz"
-      description: "hello"
+
       image: "https://zojirushi-brasil.com/wp-content/uploads/2023/06/p01a_rice-cooker-shot-1_cf-copy.jpg"
     - quina: "Cheia"
       name: "Passagem - Brasil / ¥200 mil"
-      description: "hello"
+
       image: "https://i0.wp.com/www.globefarers.com/wp-content/uploads/2016/12/flight-ticket.jpg?resize=1200%2C675&ssl=1"
