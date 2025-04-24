@@ -10,23 +10,12 @@
 
         <div class="nav-links">
             <ul class="link-list">
-                <li>
-                    <a href="#prêmios" class="link">Prêmios</a>
-                </li>
-                <li>
-                    <a href="#ponto-de-vendas" class="link" >Ponto de vendas</a>
-                </li>
-                <li>
-                    <a href="#cronograma" class="link" >Cronograma</a>
-                </li>
-                <li>
-                    <a href="#info" class="link" >Informações</a>
-                </li>
-                <li>
-                    <a href="#acesso" class="link" >Acesso</a>
-                </li>
+                <% data.links.each do |link| %>
+                    <li>
+                        <%= link_to link.name, link.href, class: 'page-links' %>
+                    </li>
+                <% end %>
             </ul>
         </div>
-
     </div>
 </nav>
