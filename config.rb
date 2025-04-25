@@ -8,6 +8,10 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :relative_assets
+set :base_url, "/eu-lari-festa/"
+
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
