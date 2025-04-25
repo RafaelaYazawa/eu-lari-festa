@@ -1,5 +1,9 @@
+require('dotenv').config(); 
+
+console.log(mapboxAccessToken); /
+
 export function initializeMap() {
-  mapboxgl.accessToken = mapboxAccessToken;
+  const mapboxAccessToken = process.env.MAPBOX_ACCESS_TOKEN;
 
   const map = new mapboxgl.Map({
     container: "map",

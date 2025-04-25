@@ -148,6 +148,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  dotenv
   middleman (~> 4.5)
   middleman-autoprefixer (~> 3.0)
   rqrcode (~> 2.0)
