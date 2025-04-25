@@ -2,10 +2,12 @@
   <div class="board">
       <div class="post-it-wrapper">
          <% data.infos.each do |info| %>
-            <div class="post-it">
+            <div class="post-it <%= info.color %>">
                <i class="fa-solid fa-circle pin" style="color: #ab0d0d;"></i>
-               <h3><%= info.name class: "info-title" %></h3>
-               <p><%= info.description class: 'info-body' %></p>
+               <div class="info-content">
+                  <h3><%= info.name class: "info-title" %></h3>
+                  <p><%= info.description class: 'info-body' %></p>
+               </div>
             </div>
          <% end %>
       </div>
