@@ -1,0 +1,6 @@
+- name: "https://www.facebook.com/profile.php?id=100087162979359&sk"
+  icon: "fa-brands fa-facebook-f contact-icon"
+- name: "https://wa.me/?text=Olá%2C%20quero%20saber%20mais%20sobre%20a%20festa!"
+  icon: "fa-solid fa-phone contact-icon"
+- name: "mailto:igrejacat.toyota@gmail.com"
+  icon: "fa-solid fa-envelope contact-icon"

@@ -33,9 +33,8 @@
 
       image: "prizes/airfryer.jpg"
     - quina: "Quina 2"
-      name: "Panela de arroz"
-
-      image: "https://zojirushi-brasil.com/wp-content/uploads/2023/06/p01a_rice-cooker-shot-1_cf-copy.jpg"
+      name: "JBL Partybox 110"
+      image: "prizes/JBLpartybox110.jpg"
     - quina: "Cheia"
       name: "Passagem - Brasil / ¥200 mil"
 
