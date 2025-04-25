@@ -27,10 +27,15 @@
             <% end %>
          </ul>
 
+         
+
          <div class="contact-info">
             <h3>Informações de Contato</h3>
-            <i class="fa-brands fa-facebook fa-2xl"></i>
-            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+            <% data.contacts.each do |contact| %>
+              <a href="<%= contact.name %>" target="_blank" rel="noopener" class="contact-link">
+                  <i class="<%= contact.icon %>"></i>
+               </a>
+            <% end %>
          </div>
       </div>
    </div>
