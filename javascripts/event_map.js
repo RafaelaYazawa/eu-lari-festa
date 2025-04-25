@@ -1,6 +1,6 @@
-require('dotenv').config(); 
+require("dotenv").config();
 
-console.log(mapboxAccessToken); /
+console.log(mapboxAccessToken);
 
 export function initializeMap() {
   const mapboxAccessToken = process.env.MAPBOX_ACCESS_TOKEN;
