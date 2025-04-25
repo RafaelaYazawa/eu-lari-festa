@@ -113,25 +113,35 @@ strong {
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .quadro-avisos {
-    max-width: 92.5%;
+    width: 100%;
     border: none;
   }
 
   .board {
     background: none;
-    display: flex;
-    align-items: center;
-    padding: 5px;
+    width: 100%;
+    padding: 0;
   }
 
   .post-it-wrapper {
-    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .post-it {
-    width: 200px;
-    max-width: 205px;
-    padding: 0.9em;
+    max-width: 100%;
+    width: auto;
+    padding: 1em;
+    height: 120px;
+    .fa-solid {
+      display: none;
+    }
+    h3 {
+      margin-top: 15px;
+    }
+    p {
+      margin: 0;
+    }
   }
 
   .info-title {
@@ -140,5 +150,26 @@ strong {
 
   .info-body {
     font-size: 13px;
+  }
+
+  .yellow {
+    background-color: rgb(255, 255, 147);
+    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
+  }
+  .green {
+    background-color: rgb(166, 234, 166);
+    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
+  }
+  .blue {
+    background-color: rgb(164, 202, 234);
+    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
+  }
+  .purple {
+    background-color: rgb(222, 179, 242);
+    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
+  }
+  .pink {
+    background-color: pink;
+    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
 }
