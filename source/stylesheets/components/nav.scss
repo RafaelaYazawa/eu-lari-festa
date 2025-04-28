@@ -90,7 +90,7 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 450px) {
   .nav-orange {
     position: sticky;
     top: 0px;
@@ -99,7 +99,7 @@
     flex-direction: column;
     align-items: flex-start;
     h3 {
-      font-size: 14px;
+      font-size: 16px;
       max-width: 90%;
       padding-right: 0.5rem;
     }
