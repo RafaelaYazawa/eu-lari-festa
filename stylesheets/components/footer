@@ -46,8 +46,25 @@
   .contact-link .contact-icon {
     font-size: 30px; }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .footer-content {
+    display: block;
     margin-top: 60px; }
+  .about {
+    padding: 0; }
+    .about h3 {
+      width: 100%;
+      padding-left: 15px; }
+    .about .div {
+      margin: 0; }
   .links {
-    display: none; } }
+    text-align: justify;
+    padding: 0 30px; }
+    .links .lists {
+      display: block;
+      padding: 0; }
+    .links li {
+      padding: 13px;
+      font-size: 16px; }
+  .contact-info {
+    padding: 0; } }

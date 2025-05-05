@@ -47,7 +47,7 @@
   .card-content {
     padding: 15px; } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .cards {
     display: block; }
   .place-link {

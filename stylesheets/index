@@ -72,7 +72,7 @@
   .intro-text img {
     display: none; } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .intro-text p {
     font-size: 17px;
     line-height: 1.65rem;
@@ -156,7 +156,7 @@
   transform: scaleY(1.3);
   opacity: 1; }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .nav-orange {
     position: sticky;
     top: 0px;
@@ -165,7 +165,7 @@
     flex-direction: column;
     align-items: flex-start; }
     .nav-orange h3 {
-      font-size: 14px;
+      font-size: 16px;
       max-width: 90%;
       padding-right: 0.5rem; }
   .wrapper {
@@ -277,7 +277,7 @@ strong {
   .quadro-avisos {
     width: 96%; } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .quadro-avisos {
     width: 100%;
     border: none; }
@@ -338,7 +338,7 @@ strong {
   .map-container {
     height: 200px; } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .map-container {
     height: 240px;
     width: 100%; } }
@@ -392,7 +392,7 @@ strong {
 .prize-card:hover .prize-description {
   opacity: 1; }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .card {
     padding: 0px;
     border-radius: 16px;
@@ -462,7 +462,7 @@ strong {
 .tab-content.active {
   display: grid; }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .tabs {
     margin: 0px;
     border-radius: 8px;
@@ -537,7 +537,7 @@ strong {
   .card-content {
     padding: 15px; } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .cards {
     display: block; }
   .place-link {
@@ -599,9 +599,16 @@ strong {
   to {
     transform: translateX(-100%); } }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .brands {
-    display: none; } }
+    margin: 60px -20px; }
+    .brands::before, .brands::after {
+      width: 40px; }
+  .sponsors {
+    animation: 24s slide infinite linear; }
+  .sponsors .logos {
+    margin: 0 20px;
+    width: 185px; } }
 
 #footer {
   background-color: orange; }
@@ -651,8 +658,25 @@ strong {
   .contact-link .contact-icon {
     font-size: 30px; }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .footer-content {
+    display: block;
     margin-top: 60px; }
+  .about {
+    padding: 0; }
+    .about h3 {
+      width: 100%;
+      padding-left: 15px; }
+    .about .div {
+      margin: 0; }
   .links {
-    display: none; } }
+    text-align: justify;
+    padding: 0 30px; }
+    .links .lists {
+      display: block;
+      padding: 0; }
+    .links li {
+      padding: 13px;
+      font-size: 16px; }
+  .contact-info {
+    padding: 0; } }
