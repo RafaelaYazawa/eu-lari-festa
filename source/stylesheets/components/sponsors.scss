@@ -46,7 +46,6 @@
   height: 110px;
   border-radius: 16px;
   margin: 0 40px;
-  cursor: pointer;
 }
 
 @keyframes slide {
@@ -75,5 +74,27 @@
   .sponsors .logos {
     margin: 0 20px;
     width: 185px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .brands {
+    margin: 60px -25px;
+
+    &::before,
+    &::after {
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .brands {
+    margin: 60px -45px;
+
+    &::before,
+    &::after {
+      width: 80px;
+    }
   }
 }

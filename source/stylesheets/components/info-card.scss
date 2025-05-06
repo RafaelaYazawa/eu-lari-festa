@@ -36,7 +36,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -89,7 +89,7 @@ strong {
   }
 
   .post-it {
-    width: 160px;
+    width: 235px;
     padding: 0.6rem;
   }
 
@@ -133,6 +133,69 @@ strong {
     width: auto;
     padding: 1em;
     height: 120px;
+    .fa-solid {
+      display: none;
+    }
+    h3 {
+      margin-top: 15px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  .info-title {
+    font-size: 15px;
+  }
+
+  .info-body {
+    font-size: 13px;
+  }
+
+  .yellow {
+    background-color: rgb(255, 255, 147);
+    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
+  }
+  .green {
+    background-color: rgb(166, 234, 166);
+    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
+  }
+  .blue {
+    background-color: rgb(164, 202, 234);
+    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
+  }
+  .purple {
+    background-color: rgb(222, 179, 242);
+    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
+  }
+  .pink {
+    background-color: pink;
+    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .quadro-avisos {
+    width: 100%;
+    border: none;
+  }
+
+  .board {
+    background: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .post-it-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .post-it {
+    max-width: 100%;
+    width: auto;
+    padding: 1.5em;
+    height: 100px;
     .fa-solid {
       display: none;
     }
