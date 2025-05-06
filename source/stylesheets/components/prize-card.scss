@@ -1,7 +1,7 @@
 .prize-card {
   margin: 20px;
   position: relative;
-  width: 320px;
+  width: 310px;
   height: 240px;
   border-radius: 10px;
   overflow: hidden;
@@ -86,10 +86,50 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 576px) {
+  .prize-card {
+    width: 365px;
+    height: 255px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .prize-img {
     width: 100%;
     height: 100%;
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .card {
+    padding: 0px;
+    border-radius: 16px;
+    width: 100%;
+    margin: 0px;
+  }
+  .prize-img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .prize-card {
+    margin: 15px auto;
+    width: 100%;
+  }
+
+  .prize-card:hover .prize-content {
+    height: 30%;
+  }
+
+  .prize-content {
+    height: 45px;
+  }
+
+  .prize-text {
+    text-align: center;
+    margin: 7px 0px;
+    font-size: 19px;
   }
 }
