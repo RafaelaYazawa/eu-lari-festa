@@ -29,9 +29,6 @@
       rgba(255, 235, 205, 0.7)
     );
   }
-  &:hover .sponsors {
-    animation-play-state: paused;
-  }
 }
 .sponsors {
   animation: 20s slide infinite linear;
