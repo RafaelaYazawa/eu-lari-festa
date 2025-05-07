@@ -1,0 +1,11 @@
+<div class="foods">
+   <% data.foods.each do |food| %>
+      <div class="food-card">
+         <%= image_tag food.image, class: "food-img" %>
+         <div class="food-content">
+            <h4 class="food-name-price"><%= food.food %></h4>
+            <h4 class="food-name-price"><%= food.price %></h4>
+         </div>
+      </div>
+   <% end %>
+</div>
