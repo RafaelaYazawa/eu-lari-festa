@@ -133,3 +133,10 @@
     font-size: 19px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .prize-card {
+    width: 280px;
+    height: 215px;
+  }
+}

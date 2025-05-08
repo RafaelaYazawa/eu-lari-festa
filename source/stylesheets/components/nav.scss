@@ -95,60 +95,14 @@
   .nav-orange {
     z-index: 3;
     padding: 1rem 1.5rem;
-    flex-direction: column;
-    align-items: flex-start;
     h3 {
-      font-size: 16px;
       max-width: 90%;
       padding-right: 0.5rem;
     }
   }
 
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  .hamburguer-icon {
-    display: block;
-    align-items: flex-end;
-    font-size: 14px;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
   .nav-links.show {
-    display: block;
-    position: absolute;
     top: 60px;
-    left: 0px;
-    width: 100%;
-    background: orange;
-  }
-
-  .link-list {
-    flex-direction: column;
-    margin: 5px 0px;
-  }
-
-  .pages-links {
-    font-size: 15px;
-  }
-
-  .link-list li a:hover {
-    color: #fff;
-  }
-
-  .link-list li a::before {
-    display: none;
-  }
-
-  .link-list li a::after {
-    display: none;
   }
 }
 
@@ -156,11 +110,22 @@
   .nav-orange {
     z-index: 3;
     padding: 1rem;
+    h3 {
+      max-width: 100%;
+    }
+  }
+
+  .nav-links.show {
+    top: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .nav-orange {
     flex-direction: column;
     align-items: flex-start;
     h3 {
       font-size: 16px;
-      max-width: 100%;
     }
   }
 
@@ -180,15 +145,14 @@
   .nav-links {
     display: none;
   }
+
   .nav-links.show {
     display: block;
     position: absolute;
-    top: 50px;
     left: 0px;
     width: 100%;
     background: orange;
   }
-
   .link-list {
     flex-direction: column;
     margin: 5px 0px;
