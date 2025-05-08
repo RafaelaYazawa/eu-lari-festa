@@ -169,8 +169,12 @@ strong {
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
   .pink {
-    background-color: pink;
+    background-color: rgb(255, 192, 227);
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
+  }
+  .orange {
+    background-color: rgb(255, 193, 193);
+    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
 }
 
