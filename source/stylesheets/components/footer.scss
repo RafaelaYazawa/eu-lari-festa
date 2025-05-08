@@ -100,18 +100,7 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
-  .footer-content {
-    display: block;
-    margin-top: 60px;
-  }
-
   .about {
-    width: 100%;
-    padding: 0;
-
-    h3 {
-      width: 100%;
-    }
     .icons {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -138,9 +127,6 @@
   }
 
   .links {
-    text-align: justify;
-    padding: 0 30px;
-
     .lists {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -196,5 +182,26 @@
 
   .contact-info {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .footer-content {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .about {
+    width: 100%;
+    padding: 0;
+
+    h3 {
+      width: 100%;
+    }
+  }
+
+  .links {
+    text-align: justify;
+    padding: 0 30px;
   }
 }

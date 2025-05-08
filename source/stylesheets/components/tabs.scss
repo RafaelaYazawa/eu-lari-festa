@@ -47,7 +47,13 @@
   display: grid;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .tabs {
+    margin: 0px -45px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
   .tabs {
     margin: 0px;
     border-radius: 8px;
@@ -63,16 +69,8 @@
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
-  .tab-content {
-    display: none;
-  }
-
-  .prize-img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .flex {
     display: block;
     justify-content: center;
@@ -83,36 +81,11 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
-  .tabs {
-    margin: 0px;
-    border-radius: 8px;
-    display: grid;
-  }
-
-  .tab-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-    background-color: green;
-    width: 100%;
-    border-radius: 8px 8px 0 0;
-  }
-  .tab-content {
-    display: none;
-  }
-
   .flex {
     display: grid;
     justify-content: center;
     align-items: baseline;
     gap: 0px;
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .tabs {
-    margin: 0px -45px;
   }
 }
