@@ -3,7 +3,7 @@
   top: 0px;
   z-index: 3;
   padding: 0.7rem 5rem;
-  background-color: orange;
+  background-color: $bg-nav-footer;
   margin: 0px auto;
   h3 {
     font-size: 24px;
@@ -56,8 +56,8 @@
   left: 0;
   width: 100%;
   height: 80%;
-  border-top: 2px solid #262626;
-  border-bottom: 2px solid #262626;
+  border-top: 2px solid $link-before-after;
+  border-bottom: 2px solid $link-before-after;
   transform: scaleY(1);
   opacity: 0;
   transition: 0.3s;
@@ -70,7 +70,7 @@
   left: 0;
   width: 100%;
   height: 80%;
-  background-color: darkgreen;
+  background-color: $dark-green;
   transform: scale(1);
   opacity: 0;
   transition: 0.4s;
@@ -78,7 +78,7 @@
 }
 
 .link-list li a:hover {
-  color: #fff;
+  color: $link-hover;
 }
 
 .link-list li a:hover::before {
@@ -151,7 +151,7 @@
     position: absolute;
     left: 0px;
     width: 100%;
-    background: orange;
+    background: $bg-nav-footer;
   }
   .link-list {
     flex-direction: column;
@@ -163,7 +163,7 @@
   }
 
   .link-list li a:hover {
-    color: #fff;
+    color: $link-hover;
   }
 
   .link-list li a::before {
@@ -209,7 +209,7 @@
     top: 50px;
     left: 0px;
     width: 100%;
-    background: orange;
+    background: $bg-nav-footer;
   }
 
   .link-list {
@@ -222,7 +222,7 @@
   }
 
   .link-list li a:hover {
-    color: #fff;
+    color: $link-hover;
   }
 
   .link-list li a::before {

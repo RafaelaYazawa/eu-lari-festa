@@ -5,7 +5,7 @@
 .quadro-avisos {
   width: 98%;
   text-align: center;
-  border: 12px solid #71554a;
+  border: 12px solid $info-border;
   ul {
     list-style-type: none;
     margin: 0px;
@@ -23,13 +23,13 @@ strong {
   padding: 30px;
   background-image: repeating-linear-gradient(
     to right,
-    #57392d,
-    #57392d 1.5px,
+    $board-linear-color-1,
+    $board-linear-color-2 1.5px,
     transparent 1.5px,
     transparent
   );
   background-size: 30px 30px;
-  background-color: #91695e;
+  background-color: $info-board-bg;
 }
 
 .post-it-wrapper {
@@ -43,7 +43,7 @@ strong {
 }
 
 .post-it {
-  background-color: #fff9c4;
+  background-color: $post-it-bg-color;
   padding: 1.3em;
   border-radius: 5px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -57,11 +57,11 @@ strong {
     text-align: center;
   }
   .pin {
-    filter: drop-shadow(2px 2px 3px grey);
+    filter: drop-shadow(2px 2px 3px $shadow);
   }
   h3 {
     margin-bottom: 0px;
-    color: #6e2c00;
+    color: $h3-color;
   }
 }
 
@@ -69,7 +69,7 @@ strong {
   transition: transform 0.2s ease;
   transform: scale(1.02);
   .pin {
-    filter: drop-shadow(1px 1px 2px grey);
+    filter: drop-shadow(1px 1px 2px $shadow);
   }
 }
 
@@ -169,27 +169,27 @@ strong {
   }
 
   .yellow {
-    background-color: rgb(255, 255, 147);
+    background-color: $yellow-bg;
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
   .green {
-    background-color: rgb(166, 234, 166);
+    background-color: $green-bg;
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
   .blue {
-    background-color: rgb(164, 202, 234);
+    background-color: $blue-bg;
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
   .purple {
-    background-color: rgb(222, 179, 242);
+    background-color: $purple-bg;
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
   .pink {
-    background-color: pink;
+    background-color: $pink-bg;
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
   .orange {
-    background-color: rgb(255, 184, 152);
+    background-color: $orange-bg;
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
 }

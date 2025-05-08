@@ -1,5 +1,5 @@
 .tabs {
-  background-color: bisque;
+  background-color: $section-bg;
   margin: 0px -121px;
 }
 
@@ -11,13 +11,13 @@
   gap: 50px;
 
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: green;
+  border: 1px solid $tab-border;
+  background-color: $tab-bg;
   .tab-button {
     background-color: inherit;
     border: none;
     width: 200px;
-    color: #ffffff;
+    color: $link-hover;
     font-size: 18px;
     padding: 15px;
     font-size: 16px;
@@ -33,11 +33,11 @@
   gap: 40px;
 }
 .tab-button:hover {
-  background-color: darkgreen;
+  background-color: $dark-green;
 }
 
 .tab-button.active {
-  background-color: rgb(0, 149, 0);
+  background-color: $active-tab;
 }
 
 .tab-content {
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     gap: 0px;
-    background-color: green;
+    background-color: $tab-bg;
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
