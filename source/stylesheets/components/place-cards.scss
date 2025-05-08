@@ -19,12 +19,12 @@
 }
 
 .card {
-  border: 1px solid black;
-  color: #181818;
+  border: 1px solid $pv-card-border;
+  color: $letter-color;
   border-radius: 16px;
   width: 300px;
-  background-color: white;
-  box-shadow: 3px 3px 7px #b2b2b2;
+  background-color: $link-hover;
+  box-shadow: 3px 3px 7px $pv-box-shadow;
 }
 
 .card-img {
@@ -48,7 +48,7 @@
 .card:hover {
   transform: translateY(-10px);
   border-radius: 20px;
-  box-shadow: 2px 3px 10px 0px slategray;
+  box-shadow: 2px 3px 10px 0px $pv-card-hover;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -58,7 +58,7 @@
     text-align: justify;
   }
   .card:hover {
-    box-shadow: 3px 3px 8px 0px slategray;
+    box-shadow: 3px 3px 8px 0px $pv-card-hover;
   }
 }
 
