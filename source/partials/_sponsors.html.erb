@@ -1,12 +1,30 @@
 <div class="brands">
-   <% 2.times do %>
-      <div class="sponsors">
-            <% data.brands.each do |brand| %>
-               <div class="slideLeft">
-                  <%= image_tag brand.image, class: 'logos' %>
-               </div>
+  <!-- Desktop version: one combined slide -->
+  <% 2.times do %>
+   <div class="sponsors all-logos">
+      <% data.brands.each do |brand| %>
+         <% brand.slides.each do |logo| %>
+         <div class="slide">
+            <%= image_tag logo.image, class: 'logos' %>
+         </div>
+         <% end %>
+      <% end %>
+   </div>
+  <% end %>
+  
+
+  <!-- Mobile version: two separate slides moving in opposite directions -->
+   <% data.brands.each_with_index do |brand, index| %>
+      <div class="sponsors <%= index.even? ? 'slideLeft' : 'slideRight' %> mobile-only">
+         <div class="slide-track">
+            <% 2.times do %>
+                  <% brand.slides.each do |logo| %>
+                     <div class="slide">
+                        <%= image_tag logo.image, class: 'logos' %>
+                     </div>
+                  <% end %>
             <% end %>
+         </div>
       </div>
    <% end %>
 </div>
-

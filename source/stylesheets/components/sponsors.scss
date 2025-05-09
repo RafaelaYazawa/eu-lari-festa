@@ -1,9 +1,12 @@
+.sponsorship {
+  margin-bottom: 0;
+}
+
 .brands {
   margin: 60px -120px;
   display: flex;
   overflow: hidden;
   padding: 30px 0;
-  white-space: nowrap;
   position: relative;
 
   &::before,
@@ -17,18 +20,26 @@
   }
   &::before {
     left: 0;
-    background: $sponsors-before-after-bg;
+    background: $sponsors-before-bg;
   }
   &::after {
     right: 0;
-    background: $sponsors-before-after-bg;
+    background: $sponsors-after-bg;
   }
 }
+
 .sponsors {
-  animation: 20s slide infinite linear;
+  display: inline-block;
+  white-space: nowrap;
+}
+.sponsors.all-logos {
+  animation: 35s slide infinite linear;
+}
+.sponsors.mobile-only {
+  display: none;
 }
 
-.slideLeft {
+.slide {
   display: inline-block;
 }
 
@@ -50,23 +61,149 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .brands {
-    margin: 60px -20px;
+    margin: 30px -120px 60px -120px;
+    position: relative;
+    height: 270px;
+    padding: 0;
+    overflow: hidden;
 
     &::before,
     &::after {
-      width: 40px;
+      width: 20px;
     }
   }
 
-  .sponsors {
-    animation: 24s slide infinite linear;
+  .sponsors.all-logos {
+    display: none;
+  }
+
+  .sponsors.mobile-only {
+    display: block;
+    white-space: nowrap;
+    width: max-content;
+    position: absolute;
+    left: 0;
   }
 
   .sponsors .logos {
     margin: 0 20px;
     width: 185px;
+    flex-shrink: 0;
+  }
+
+  .sponsors.slideLeft,
+  .sponsors.slideRight {
+    display: inline-block;
+    position: relative;
+  }
+
+  .sponsors.slideLeft {
+    display: inline-block;
+    animation: slide-left 40s linear infinite;
+  }
+
+  .sponsors.slideRight {
+    position: absolute;
+    bottom: 0;
+    animation: slide-right 40s linear infinite;
+  }
+
+  .slide-track {
+    display: flex;
+    width: max-content;
+    will-change: transform;
+  }
+  .slide {
+    flex-shrink: 0;
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
+
+// /* Default (desktop/tablet) styles */
+// .sponsors.all-logos {
+//   display: flex;
+//   animation: 35s slide-left infinite linear;
+// }
+
+// .sponsors.mobile-only {
+//   display: none;
+// }
+
+// /* Common styles for all .sponsors */
+// .sponsors {
+//   white-space: nowrap;
+// }
+
+// .slide {
+//   display: inline-block;
+// }
+
+// .logos {
+//   width: 200px;
+//   height: 110px;
+//   border-radius: 16px;
+//   margin: 0 40px;
+// }
+
+// /* Mobile-specific overrides */
+// @media screen and (max-width: 480px) {
+//   .sponsors.all-logos {
+//     display: none;
+//   }
+
+//   .sponsors.mobile-only {
+//     display: flex;
+//   }
+
+//   .sponsors.slideLeft {
+//     animation: 24s slide-left infinite linear;
+//   }
+
+//   .sponsors.slideRight {
+//     animation: 24s slide-right infinite linear;
+//   }
+
+//   .logos {
+//     margin: 0 20px;
+//     width: 185px;
+//   }
+// }
+
+// /* Animations */
+// @keyframes slide-left {
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(-100%);
+//   }
+// }
+
+// @keyframes slide-right {
+//   from {
+//     transform: translateX(100%);
+//   }
+//   to {
+//     transform: translateX(0%);
+//   }
+// }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .brands {

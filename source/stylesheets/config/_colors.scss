@@ -49,6 +49,13 @@ $orange-bg: #ffb898;
 $map-shadow: #696969;
 
 // Sponsors
-$sponsors-before-after-bg: linear-gradient(
-  (to left, rgba(255, 235, 205, 0), rgba(255, 235, 205, 0.6))
+$sponsors-before-bg: linear-gradient(
+  to left,
+  rgba(255, 235, 205, 0),
+  rgba(255, 235, 205, 0.6)
+);
+$sponsors-after-bg: linear-gradient(
+  to right,
+  rgba(255, 235, 205, 0),
+  rgba(255, 235, 205, 0.6)
 );
