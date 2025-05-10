@@ -24,7 +24,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
   position: relative;
   z-index: 1;
   width: 100%; }
@@ -64,7 +64,7 @@ strong {
   .board {
     padding: 20px; }
   .post-it {
-    width: 235px;
+    width: 160px;
     padding: 0.6rem; }
   .post-it .pin {
     font-size: 12px; }
@@ -93,48 +93,6 @@ strong {
     width: auto;
     padding: 1em;
     height: 120px; }
-    .post-it .fa-solid {
-      display: none; }
-    .post-it h3 {
-      margin-top: 15px; }
-    .post-it p {
-      margin: 0; }
-  .info-title {
-    font-size: 15px; }
-  .info-body {
-    font-size: 13px; }
-  .yellow {
-    background-color: #ffff93;
-    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg); }
-  .green {
-    background-color: #a6eaa6;
-    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg); }
-  .blue {
-    background-color: #a4caea;
-    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg); }
-  .purple {
-    background-color: #deb3f2;
-    transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg); }
-  .pink {
-    background-color: pink;
-    transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg); } }
-
-@media screen and (min-width: 481px) and (max-width: 576px) {
-  .quadro-avisos {
-    width: 100%;
-    border: none; }
-  .board {
-    background: none;
-    width: 100%;
-    padding: 0; }
-  .post-it-wrapper {
-    width: 100%;
-    margin: 0 auto; }
-  .post-it {
-    max-width: 100%;
-    width: auto;
-    padding: 1.5em;
-    height: 100px; }
     .post-it .fa-solid {
       display: none; }
     .post-it h3 {
