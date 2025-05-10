@@ -16,15 +16,15 @@
   <!-- Mobile version: two separate slides moving in opposite directions -->
    <% data.brands.each_with_index do |brand, index| %>
       <div class="sponsors <%= index.even? ? 'slideLeft' : 'slideRight' %> mobile-only">
-         <div class="slide-track">
             <% 2.times do %>
-                  <% brand.slides.each do |logo| %>
-                     <div class="slide">
-                        <%= image_tag logo.image, class: 'logos' %>
-                     </div>
-                  <% end %>
-            <% end %>
+         <div class="slide-track">
+               <% brand.slides.each do |logo| %>
+                  <div class="slide">
+                     <%= image_tag logo.image, class: 'logos' %>
+                  </div>
+               <% end %>
          </div>
+            <% end %>
       </div>
    <% end %>
 </div>
