@@ -11,8 +11,8 @@
   gap: 50px;
 
   overflow: hidden;
-  border: 1px solid $tab-border;
-  background-color: $tab-bg;
+  border: 1px solid #ccc;
+  background-color: #008000;
   .tab-button {
     background-color: inherit;
     border: none;
@@ -65,7 +65,7 @@
     align-items: center;
     justify-content: center;
     gap: 0px;
-    background-color: $tab-bg;
+    background-color: #008000;
     width: 100%;
     border-radius: 8px 8px 0 0;
   }
