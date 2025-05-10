@@ -20,11 +20,19 @@
   }
   &::before {
     left: 0;
-    background: $sponsors-before-bg;
+    background: linear-gradient(
+      to left,
+      rgba(255, 235, 205, 0),
+      rgba(255, 235, 205, 0.6)
+    );
   }
   &::after {
     right: 0;
-    background: $sponsors-after-bg;
+    background: linear-gradient(
+      to right,
+      rgba(255, 235, 205, 0),
+      rgba(255, 235, 205, 0.6)
+    );
   }
 }
 
