@@ -24,7 +24,7 @@
   border-radius: 16px;
   width: 300px;
   background-color: #fff;
-  box-shadow: 3px 3px 7px $pv-box-shadow;
+  box-shadow: 3px 3px 7px #808080;
 }
 
 .card-img {
@@ -48,7 +48,7 @@
 .card:hover {
   transform: translateY(-10px);
   border-radius: 20px;
-  box-shadow: 2px 3px 10px 0px $pv-card-hover;
+  box-shadow: 2px 3px 10px 0px #808080;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -58,7 +58,7 @@
     text-align: justify;
   }
   .card:hover {
-    box-shadow: 3px 3px 8px 0px $pv-card-hover;
+    box-shadow: 3px 3px 8px 0px #708090;
   }
 }
 
