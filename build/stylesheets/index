@@ -604,7 +604,7 @@ strong {
   border-radius: 16px;
   width: 300px;
   background-color: #fff;
-  box-shadow: 3px 3px 7px #b2b2b2; }
+  box-shadow: 3px 3px 7px #808080; }
 
 .card-img {
   width: 100%;
@@ -623,7 +623,7 @@ strong {
 .card:hover {
   transform: translateY(-10px);
   border-radius: 20px;
-  box-shadow: 2px 3px 10px 0px #708090; }
+  box-shadow: 2px 3px 10px 0px #808080; }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .ticket-card {
