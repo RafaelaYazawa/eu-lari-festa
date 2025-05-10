@@ -169,27 +169,27 @@ strong {
   }
 
   .yellow {
-    background-color: $yellow-bg;
+    background-color: #ffff93;
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
   .green {
-    background-color: $green-bg;
+    background-color: #a6eaa6;
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
   .blue {
-    background-color: $blue-bg;
+    background-color: #a4caea;
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
   .purple {
-    background-color: $purple-bg;
+    background-color: #deb3f2;
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
   .pink {
-    background-color: $pink-bg;
+    background-color: pink;
     transform: rotateX(0deg) rotateY(2deg) rotateZ(-1deg);
   }
   .orange {
-    background-color: $orange-bg;
+    background-color: #ffb898;
     transform: rotateX(0deg) rotateY(-2deg) rotateZ(1deg);
   }
 }
