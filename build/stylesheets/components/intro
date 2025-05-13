@@ -62,3 +62,15 @@
 @media screen and (max-width: 620px) {
   .intro-text img {
     display: none; } }
+
+@media screen and (min-width: 620px) and (max-width: 768px) {
+  .intro h1 {
+    text-align: justify;
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 75px; }
+  .intro-text {
+    font-size: 18px; }
+  .intro-text img {
+    width: 280px; } }

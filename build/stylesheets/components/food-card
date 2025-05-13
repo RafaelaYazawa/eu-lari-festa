@@ -81,3 +81,12 @@
     margin-bottom: 20px; }
     .food-content .food-name-price {
       margin: 0; } }
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .foods {
+    margin: 0 auto;
+    padding: 0.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px; }
+  .food-card {
+    padding: 10px 0; } }

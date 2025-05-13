@@ -60,11 +60,11 @@ strong {
 
 @media screen and (max-width: 978px) {
   .post-it-wrapper {
-    gap: 1.25rem; }
+    gap: 1.5rem; }
   .board {
-    padding: 20px; }
+    padding: 30px 15px; }
   .post-it {
-    width: 235px;
+    width: 260px;
     padding: 0.6rem; }
   .post-it .pin {
     font-size: 12px; }
