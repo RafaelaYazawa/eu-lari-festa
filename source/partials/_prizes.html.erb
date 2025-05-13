@@ -12,7 +12,7 @@
       <div class="tab-content <%= 'active' if index == 0 %>" id="tab-<%= index %>">
         <div class="flex">
           <% round.prizes.each do |prize| %>
-            <div class="prize-card"> 
+            <div class="prize-card <%= prize.area %>"> 
               <%= image_tag prize.image, class: 'prize-img' %> 
               <div  class="prize-content">
                 <h4 class="prize-name"><%= prize.quina %></h4>               
