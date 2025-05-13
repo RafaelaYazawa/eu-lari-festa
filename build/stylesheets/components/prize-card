@@ -47,6 +47,9 @@
 .prize-card:hover .prize-description {
   opacity: 1; }
 
+.img-ilustration-p {
+  padding: 10px 0; }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .card {
     padding: 0px;
