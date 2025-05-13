@@ -20,7 +20,7 @@
          <div class="slide-track">
                <% brand.slides.each do |logo| %>
                   <div class="slide">
-                     <%= image_tag logo.image, class: 'logos' %>
+                     <%= image_tag logo.image, class: 'logos', alt: logo.name %>
                   </div>
                <% end %>
          </div>
