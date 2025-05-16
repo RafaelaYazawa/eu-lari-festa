@@ -182,15 +182,16 @@
     flex-direction: column;
     align-items: flex-start;
     h3 {
-      font-size: 16px;
+      font-size: 17px;
       max-width: 100%;
+      margin: 0 25px;
     }
   }
 
   .wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 650px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -198,6 +199,7 @@
     display: block;
     align-items: flex-end;
     font-size: 17px;
+    margin: 0px 25px;
   }
 
   .nav-links {
@@ -231,5 +233,24 @@
 
   .link-list li a::after {
     display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .nav-orange {
+    padding: 0.7rem 2.3rem;
+
+    .wrapper {
+      align-items: baseline;
+    }
+  }
+
+  .wrapper h3 {
+    font-size: 18px;
+  }
+
+  .link-list li a {
+    padding: 10px 8px;
+    font-size: 15px;
   }
 }
