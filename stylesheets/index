@@ -25,6 +25,10 @@
     width: 600px;
     opacity: 0.9; }
 
+@media screen and (max-width: 320px) {
+  .intro h1 {
+    font-size: 45px; } }
+
 @media screen and (max-width: 576px) {
   .intro h1 {
     margin-top: 55px;
@@ -45,9 +49,7 @@
   .intro-text p {
     font-size: 17px;
     line-height: 1.65rem;
-    font-weight: 500; }
-  .intro-text img {
-    display: none; } }
+    font-weight: 500; } }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .intro h1 {
@@ -66,14 +68,40 @@
 @media screen and (min-width: 620px) and (max-width: 768px) {
   .intro h1 {
     text-align: justify;
-    font-size: 40px;
+    font-size: 38px;
     letter-spacing: 2px;
     margin-bottom: 0px;
     margin-top: 75px; }
   .intro-text {
-    font-size: 18px; }
+    font-size: 14px; }
   .intro-text img {
     width: 280px; } }
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .intro h1 {
+    font-size: 55px; }
+  .intro h3 {
+    max-width: 97%; }
+  .intro-text img {
+    width: 300px; }
+  .intro-text {
+    font-size: 21px; } }
+
+@media screen and (min-width: 879px) and (max-width: 1024px) {
+  .intro h1 {
+    font-size: 55px; }
+  .intro h3 {
+    max-width: 97%; }
+  .intro-text {
+    font-size: 20px; }
+    .intro-text img {
+      width: 300px; } }
+
+@media screen and (min-width: 830px) and (max-width: 1024px) {
+  .intro-text img {
+    width: 3px; }
+  .intro-text img {
+    width: 300px; } }
 
 .nav-orange {
   position: sticky;
@@ -215,17 +243,19 @@
     flex-direction: column;
     align-items: flex-start; }
     .nav-orange h3 {
-      font-size: 16px;
-      max-width: 100%; }
+      font-size: 17px;
+      max-width: 100%;
+      margin: 0 25px; }
   .wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 650px;
+    max-width: 100%;
     margin: 0 auto; }
   .hamburguer-icon {
     display: block;
     align-items: flex-end;
-    font-size: 17px; }
+    font-size: 17px;
+    margin: 0px 25px; }
   .nav-links {
     display: none; }
   .nav-links.show {
@@ -246,6 +276,17 @@
     display: none; }
   .link-list li a::after {
     display: none; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .nav-orange {
+    padding: 0.7rem 2.3rem; }
+    .nav-orange .wrapper {
+      align-items: baseline; }
+  .wrapper h3 {
+    font-size: 18px; }
+  .link-list li a {
+    padding: 10px 8px;
+    font-size: 15px; } }
 
 .info-container {
   margin: 30px 0px; }
@@ -527,7 +568,7 @@ strong {
 
 .tabs {
   background-color: #ffe4c4;
-  margin: 0px -121px; }
+  margin: 0px -82px; }
 
 .tab-buttons {
   display: flex;
@@ -601,7 +642,7 @@ strong {
     gap: 0px;
     width: 100%; } }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 620px) and (max-width: 768px) {
   .flex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -616,9 +657,32 @@ strong {
   .area3 {
     grid-area: 2/2/3/4; } }
 
+@media screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .tabs {
+    margin: 0 -49px; }
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px 3px; }
+  .area1 {
+    grid-area: 1/1/2/3; }
+  .area2 {
+    grid-area: 1/3/2/5; }
+  .area3 {
+    grid-area: 2/2/3/4; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .flex {
+    gap: 15px; }
+  .tabs {
+    margin: 0 -90px; } }
+
 .ticket-card {
-  margin-top: 15px;
-  padding: 20px; }
+  margin-top: 0;
+  padding: 10px 20px; }
   .ticket-card p {
     margin: 0; }
 
@@ -717,7 +781,7 @@ strong {
   margin-bottom: 0; }
 
 .brands {
-  margin: 60px -120px;
+  margin: 20px -82px 60px -82px;
   display: flex;
   overflow: hidden;
   padding: 30px 0;
@@ -741,7 +805,7 @@ strong {
   white-space: nowrap; }
 
 .sponsors.all-logos {
-  animation: 35s slide infinite linear; }
+  animation: 60s slide infinite linear; }
 
 .sponsors.mobile-only {
   display: none; }
@@ -816,25 +880,30 @@ strong {
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .brands {
-    margin: 60px -25px; }
+    margin: 60px -15px; }
     .brands::before, .brands::after {
       width: 80px; } }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .brands {
-    margin: 60px -45px; }
+    margin: 0 -45px;
+    padding-top: 8px; }
     .brands::before, .brands::after {
       width: 80px; } }
 
+@media screen and (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+  .brands {
+    margin: 20px -45px 60px -120px; } }
+
 .foods {
-  margin: 0 110px;
+  margin: 0 8.11px;
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px; }
 
 .food-card {
   margin: 0;
-  padding: 30px;
+  padding: 15px 0;
   width: 100%;
   height: 200px;
   position: relative; }
@@ -861,7 +930,7 @@ strong {
     justify-content: center;
     grid-template-columns: repeat(2, 145px); }
   .food-card {
-    margin: 20px 0;
+    margin: 1.25rem 0;
     padding: 0;
     width: 140px;
     height: 100px;
@@ -872,14 +941,14 @@ strong {
   .foods {
     display: grid;
     gap: 20px 10px;
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 160px);
     padding: 0;
     margin: 0;
     justify-content: center; }
   .food-card {
     margin: 20px 0;
     padding: 0;
-    width: 175px;
+    width: 160px;
     height: 100px;
     position: relative;
     align-items: center; }
@@ -898,7 +967,7 @@ strong {
     margin: 0;
     justify-content: center; }
   .food-card {
-    margin: 20px 0;
+    margin: 0;
     padding: 0;
     width: 180px;
     height: 100px;
@@ -913,11 +982,24 @@ strong {
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .foods {
     margin: 0 auto;
-    padding: 0.2rem;
+    padding: 3px;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px 20px; }
   .food-card {
     padding: 10px 0; } }
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .foods {
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr); }
+  .food-card {
+    padding: 15px; } }
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .foods {
+    margin: 0; }
+  .food-card {
+    padding: 15px 0; } }
 
 #footer {
   background-color: #ffa500; }
@@ -1022,13 +1104,15 @@ strong {
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .footer-content {
-    display: block;
+    display: flex;
     margin-top: 60px; }
   .about {
     padding: 0; }
     .about h3 {
       width: 100%;
-      padding-left: 15px; }
+      padding-left: 0; }
+    .about .icons {
+      margin: 0; }
     .about .div {
       margin: 0; }
   .links {
@@ -1055,3 +1139,16 @@ strong {
   .links {
     text-align: justify;
     padding: 0 30px; } }
+
+@media screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    text-align: center; }
+    .lists li {
+      padding: 10px 5px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .links li {
+    padding: 5px; } }

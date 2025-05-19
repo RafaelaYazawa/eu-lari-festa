@@ -101,13 +101,15 @@
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .footer-content {
-    display: block;
+    display: flex;
     margin-top: 60px; }
   .about {
     padding: 0; }
     .about h3 {
       width: 100%;
-      padding-left: 15px; }
+      padding-left: 0; }
+    .about .icons {
+      margin: 0; }
     .about .div {
       margin: 0; }
   .links {
@@ -134,3 +136,16 @@
   .links {
     text-align: justify;
     padding: 0 30px; } }
+
+@media screen and (min-width: 769px) and (max-width: 900px) and (orientation: landscape) {
+  .lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    text-align: center; }
+    .lists li {
+      padding: 10px 5px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .links li {
+    padding: 5px; } }
