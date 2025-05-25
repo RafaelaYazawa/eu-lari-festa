@@ -25,7 +25,11 @@
       image: "brands/feminina.jpeg"
     - name: "Fujiarte - Logo"
       image: "brands/fujiart.jpeg"
+    - name: "Garage R8 - Logo"
+      image: "brands/garage-r8.jpeg"
 - slides:
+    - name: "IB Company (International Business Company) - Logo"
+      image: "brands/ib.jpeg"
     - name: "Kakko Auto Service (Car Wash and Repair) - Logo"
       image: "brands/kakko.jpeg"
     - name: "Kowa - Logo"
