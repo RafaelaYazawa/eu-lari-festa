@@ -1,6 +1,6 @@
 <div class="foods">
    <% data.foods.each do |food| %>
-      <div class="food-card">
+      <div class="food-card <%= food.area%>">
          <%= image_tag food.image, class: "food-img", alt: food.food %>
          <div class="food-container">
             <div class="food-content">

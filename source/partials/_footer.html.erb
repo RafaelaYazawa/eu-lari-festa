@@ -33,7 +33,7 @@
             <h3>Informações de Contato</h3>
             <div  class="contact-grid">
               <% data.contacts.each do |contact| %>
-               <a href="<%= contact.name %>" target="_blank" rel="noopener" class="contact-link <%= contact.area %>">
+               <a href="<%= contact.contact %>" target="_blank" rel="noopener" class="contact-link <%= contact.area %>">
                      <i class="<%= contact.icon %>"></i>
                      <p class="contact-name"><%= contact.name%></p>
                   </a>
