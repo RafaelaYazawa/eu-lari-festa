@@ -59,7 +59,8 @@
     margin-top: 5px;
     margin-bottom: 20px; }
     .food-content .food-name-price {
-      margin: 0; } }
+      margin: 0;
+      font-size: 14px; } }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .foods {

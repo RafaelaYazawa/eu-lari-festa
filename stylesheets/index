@@ -956,7 +956,8 @@ strong {
     margin-top: 5px;
     margin-bottom: 20px; }
     .food-content .food-name-price {
-      margin: 0; } }
+      margin: 0;
+      font-size: 14px; } }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .foods {
@@ -1049,6 +1050,21 @@ strong {
   .contact-link .contact-icon {
     font-size: 30px; }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+
+.wpp-yolanda {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.wpp-mariana {
+  grid-area: 1 / 2 / 2 / 3; }
+
+.facebook {
+  grid-area: 1 / 3 / 2 / 4; }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .footer-content {
     display: block;
@@ -1070,8 +1086,15 @@ strong {
     .links li {
       padding: 13px;
       font-size: 16px; }
+  .contact-grid {
+    display: block; }
   .contact-info {
-    padding: 0; } }
+    padding: 0; }
+    .contact-info a {
+      display: flex;
+      align-items: center; }
+  .contact-name {
+    font-size: 16px; } }
 
 @media screen and (min-width: 481px) and (max-width: 576px) {
   .about .icons {
