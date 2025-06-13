@@ -31,11 +31,14 @@
 
          <div class="contact-info">
             <h3>Informações de Contato</h3>
-            <% data.contacts.each do |contact| %>
-              <a href="<%= contact.name %>" target="_blank" rel="noopener" class="contact-link">
-                  <i class="<%= contact.icon %>"></i>
-               </a>
-            <% end %>
+            <div  class="contact-grid">
+              <% data.contacts.each do |contact| %>
+               <a href="<%= contact.name %>" target="_blank" rel="noopener" class="contact-link <%= contact.area %>">
+                     <i class="<%= contact.icon %>"></i>
+                     <p class="contact-name"><%= contact.name%></p>
+                  </a>
+               <% end %>
+            </div>
          </div>
       </div>
    </div>
