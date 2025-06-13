@@ -2,7 +2,7 @@
   description: "A 20ª Festa Junina Beneficente ocorrerá em <strong> 29 de Junho de 2025 </strong>. Marquem seus calendários!"
   color: "yellow"
 - name: "Estacionamento"
-  description: "Haverá vagas gratuitas disponíveis no estádio e em seus arredores. Contudo, agradeceríamos se pudessem utilizar o transporte público para chegar até a festa."
+  description: "Haverá vagas gratuitas disponíveis no estádio e em seus arredores."
   color: "green"
 - name: "Itens Proibidos"
   description: "Por motivos de seguraça, <strong>bebidas alcoólicas são estritamente proibidas</strong>. Bebidas não-alcoólicas estarão á venda no dia do evento."
